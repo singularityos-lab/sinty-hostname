@@ -1,0 +1,12 @@
+[Unit]
+Description=Sinty hostname service (hostnamed-compatible)
+Documentation=https://github.com/singularityos-lab/sinty-hostname
+After=dbus.service
+
+[Service]
+Type=dbus
+Environment=DBUS_SYSTEM_BUS_ADDRESS=unix:path=/run/dbus/system_bus_socket
+BusName=org.freedesktop.hostname1
+ExecStart=/usr/libexec/sinty-hostnamed
+Restart=on-failure
+RestartSec=1

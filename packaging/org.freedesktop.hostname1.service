@@ -1,0 +1,5 @@
+[D-BUS Service]
+Name=org.freedesktop.hostname1
+Exec=/usr/libexec/sinty-hostnamed
+User=root
+SystemdService=sinty-hostnamed.service

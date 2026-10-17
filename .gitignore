@@ -1,0 +1,7 @@
+/sinty-hostname
+/sinty-hostnamed
+*.test
+*.out
+
+.DS_Store
+*.swp
